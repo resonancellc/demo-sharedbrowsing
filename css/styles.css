@@ -1,0 +1,184 @@
+#top {
+    margin-top: 30px;
+}
+#appName {
+    margin-top: 5px;
+}
+h3 {
+    font-family: "Open Sans", "sans-serif";
+    font-weight: 300;
+}
+h6 {
+    font-family: "Open Sans", "sans-serif";
+    font-weight: 600;
+}
+.url-container{
+    margin-top: 35px;
+}
+
+#urlLabel {
+    font-family: "Open Sans", "sans-serif";
+    font-weight: 300;
+    font-size: 12px;
+    color: white;
+    border-radius: 0px;
+    border: none;
+    background-color: #515151;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.link-box {
+    background-color: #CBCBCB;
+    border: none;
+    border-radius: 0px;
+}
+#urlInput {
+    font-family: "Open Sans", "sans-serif";
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 0px;
+}
+.form-control::-webkit-input-placeholder { 
+    font-family: "Open Sans", "sans-serif";
+    font-weight: 400;
+    font-style: italic;
+    font-size: 12px;
+    color: #808080;
+}
+.form-control:-moz-placeholder { 
+    font-family: "Open Sans", "sans-serif";
+    font-weight: 400;
+    font-style: italic;
+    font-size: 12px;
+    color: #808080;
+}
+.form-control::-moz-placeholder { 
+    font-family: "Open Sans", "sans-serif";
+    font-weight: 400;
+    font-style: italic;
+    font-size: 12px;
+    color: #808080;
+}
+.form-control:-ms-input-placeholder { 
+    font-family: "Open Sans", "sans-serif";
+    font-weight: 400;
+    font-style: italic;
+    font-size: 12px;
+    color: #808080;
+}
+
+.video-win {
+    width: 180px;
+    height: 135px;
+    background-color: #515151;
+    border-radius: 0px;
+    border: none;
+    padding: 0px;
+    vertical-align: middle;
+    text-align: center;
+
+    background-image: url(../img/usericon.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-position: center;
+    background-size: 
+}
+
+.video-win i {
+    color: #333333;
+    font-size: 75px;
+    margin-top: 25px;
+}
+
+.vid-container{
+    padding-left: 0;
+}
+
+#winContainer {
+    border: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    padding: 0;
+    margin-top: 30px;
+    min-height: 700px;
+    /*margin-bottom: 30px;*/
+}
+
+#winContainer .panel {
+    height: 150px;
+    background-color: #515151;
+    border-radius: 0px;
+    border: none;
+    padding: 0px;
+    vertical-align: middle;
+    text-align: center;
+}
+#winContainer h3 {
+    margin-top: 120px;
+    text-align: center;
+}
+#callUrlContainer {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+}
+#callUrlContainer h6 {
+    font-family: "Open Sans", "sans-serif";
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    text-align: left;
+}
+#myLinkContainer {
+    width: 100%;
+}
+#myCallLink {
+    font-family: "Open Sans", "sans-serif";
+    font-weight: 600;
+    font-size: 12px;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+}
+#sharedWin {
+    width: 100%;
+    border: none;
+}
+#infoLable {
+    margin-bottom: 30px;
+    width: 100%;
+    font-family: "Open Sans", "sans-serif";
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+    overflow: hidden;
+}
+.video-view {
+    width: 180px;
+    height: 135px;
+    padding: 5px;
+}
+#endBtn {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 65px;
+    display: none;
+
+    font-size: 30px;
+    color: white;
+    background: #81292B; 
+    border-radius: 50%; 
+    height: 50px;
+    width: 50px;
+    padding-top: 9px;
+    transform: rotate(135deg);
+}
+#failInfo {
+    display: none;
+    position: absolute;
+    top: 345px;
+    z-index: -1;
+    margin-left: 40%;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>WebRTC Live Collaborative Browsing</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic,300italic,600italic' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row" id="top">
+        <div class="col-md-7 col-lg-8">
+            <h3 id="appName">Live Collaborative Browsing</h3>
+            <h6>Xirsys and Pubnub</h6>
+            <div class="input-group input-group-lg url-container">
+                <span class="input-group-addon" id="urlLabel">URL</span>
+                <input type="text" class="form-control link-box" id="urlInput" placeholder="Enter a URL here to start sharing..." aria-describedby="urlLabel" disabled="true">
+            </div>
+        </div>
+        <div class="col-md-5 col-lg-4">
+            <div class="row">
+                <div class="col-xs-3 col-md-6 vid-container">
+                    <div id="vidSelfContainer" class="video-win">
+                    <video class='video-view' id='videoSelf' muted='true' autoplay></video>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-md-6 vid-container">
+                    <div id="vidRemoteContainer" class="video-win">
+                        <span id="endBtn" class="fa fa-phone"></span>
+                        <video class='video-view' id='videoRemote' autoplay></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="winContainer">
+                <div class="row" id="callLinkView">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <h3>Reach Out With Your Feelings</h3>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div id="callUrlContainer">
+                                    <h6>Copy and Share This URL to Connect:</h6>
+                                    <div id="myLinkContainer">
+                                        <div class="link-box" id="myCallLink">http://</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <iframe id="sharedWin" src=""></iframe>
+                <div id="failInfo" >URL does not allow iframe Embed.</div>
+            </div>
+        </div>
+        <label id="infoLable">URL is Empty.</label>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdn.pubnub.com/pubnub-dev.js"></script>
+<script src="http://cdn.pubnub.com/webrtc/webrtc.js"></script>
+<script src="js/sharebrowse.js"></script>
+
+</body>
+</html>
