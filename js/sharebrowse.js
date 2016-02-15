@@ -49,7 +49,8 @@
             number        : number,
             publish_key   : 'pub-c-your-pubnub-publish-key',
             subscribe_key : 'sub-c-your-pubnub-subscribe-key',
-            onaddstream   : addRemoteVideo//add custom handling for remote users video.
+            onaddstream   : addRemoteVideo,//add custom handling for remote users video.
+            ssl           : true
         });
         //called when the local user connection is established with the service. 
         phone.ready( function(){
